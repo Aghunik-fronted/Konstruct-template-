@@ -1,68 +1,81 @@
-body{
-    position: absolute;
-    left: 300px;
-    top: 0px;
+body {
+    overflow: scroll;
 }
 
 .header{
-    background-image: url(../images/bg.png);
-    background-size: 1438px 769px;
-    background-position: -1px 1px;
-    width: 1440px;
-    height: 768px;
-    border: 1px solid #979797;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    
+    text-align: center;
+    max-width: 1440px;
+    width: 100%;
+    border: 1px solid #979797;
+    margin: 0 auto;
 }
 
 .container{
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 768px;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    width: 100%;
+    height: 769px;
+    margin-top: 41px;
+    padding-bottom: 58px;
+
+    }
+.box {
+    position: relative;
+    top: 48px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 1px;
-    width: 101.63px;
-    position: absolute;
-    height: 23px;
-    top: 41px;
-    left: 669px;
-    gap: 0.23px; 
-
+    width: 100%;
+    
 }
 .partner{
     font-family: "Bebas Neue", sans-serif;
     font-style: normal;
-    position: absolute;
-    width: 576px;
-    height: 59px;
-    left: 435px;
-    top: 380px;
+    min-width: 576px;
+    height: 60px;
     padding-bottom: 1px;
     color: #fff;
     font-size: 60px;
     line-height: 100%;
     letter-spacing: 5.71px;
     font-weight: 400;
-    flex-wrap: nowrap;
     text-transform: uppercase;
-    min-width: 100%;
+    width: 100%;
+    text-align: center;
+    margin: 5px auto;
 }
 .firm{
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     width: 386px;
     height: 22px;
-    position: absolute;
-    top: 439px;
-    left: 527.5px;
     color: #fff;
     font-size: 16px;
     font-weight: 600;
     line-height: 100%;
     text-align: center;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 .scroll-down{
     font-family: "Open Sans", sans-serif;
@@ -72,13 +85,252 @@ body{
     line-height: 100%;
     letter-spacing: 3.7px;
     color: #fff;
-    width: 120px;
+    max-width: 120px;
     height: 15px;
-    position: absolute;
-    top: 682px;
-    left: 660.5px;
+    width: 100%;
     text-transform: uppercase;
+}
+.logo {
+    background-image: url(../images/Triangle.png);
+    background-repeat: no-repeat;
+    background-position: 63px;
+    width: 79.53px;
+    height: 18px;
+    margin: 24px 250px;
+    margin-left: 250px;
+}
+.header-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.container-row {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    align-items: center;
+    min-width: 1442px;
+    width: 100%;
+    height: 65px;
+    border: 1px solid #e6e6e6;
+    margin-left: -1px;
+    box-sizing: border-box;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 39px;
+    margin: 0;
+    padding: 0;
+    margin-top: 24px;
+    margin-left: 200px;
+
+}
+.menu-link {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.09em;
+    color: #48555b;
+    text-decoration: none;
+}
+.menu-link:hover {
+    color: #00a4e5;
+}
+.main {
+    display: flex;
     text-align: center;
     justify-content: center;
+    flex-direction: column;
+    margin-top: 56px;
+}
+.story {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 941px;
+    min-height: 344px;
+    margin: 0 auto;
+}
+.second-header {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.13em;
+    text-align: center;
+    color: #48555b;
+}
+hr {
+    border: 2px solid #00a4e5;
+    width: 50px;
+    margin-top: 5px;
+}
+.story-row{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 408.05px;
+}
+.construct {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+    color: #48555b;
+    margin-top: 92px;
+    width: 405.08px;
+    height: 81px;
+    letter-spacing: 0.01em;
+}
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    line-height: 177%;
+    letter-spacing: 0.01em;
+    color: #48555b;
+}
+strong {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: #16ace8;
+}
+.plans {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto;
+    margin-left: 76.92px;
+    margin-top: 92px;
+    margin-bottom: 0;
+    height: 100%s;
+}
+.story-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.advantage-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+    width: 940px;
+    margin-top: 131px;
+    
 
+}
+.advantage{
+    width: 940px;
+    min-height: 435px;
+    height: 100%;
+    margin: 0 auto;
+}
+.advantage-list {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.13em;
+    color: #48555b;
+    box-sizing: border-box;
+    text-align: left;
+    margin-right: 154px;
+    white-space: nowrap;
+    margin-top: 0;
+}
+.line-border{
+    margin-left: 0%;
+}
+a {
+    text-decoration: none;
+
+}
+.text-item {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 173%;
+    letter-spacing: 0.02em;
+    color: #48555b;
+    width: 405.4;
+    height: 38px;
+    text-decoration: none;
+    text-align: left;
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+.btn-item {
+    display: flex;
+    background-color: #00a4e5;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #fff;
+    text-decoration: none;
+    align-items: center;
+    padding: 11px 29px;
+    margin-left: 31.6px;
+    white-space: nowrap;
+    margin-top: 0;
+}
+
+.btn-item:hover {
+    background-color: #fff;
+    color:  #00a4e5;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.advantage-item-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 27px;
+    margin-top: 72px;
+
+}
+.advantage-item-container{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border: 1px solid #E6E6E6;
+    width: 295;
+    min-height: 330px;
+    height: 100%;
+
+}
+.advantage-item-logo{
+    margin-top: 38px;
+    margin-left: 23px;
+    width: 65px;
+    min-height: 75px;
+    height: 100%;
+}
+.advantage-item-title{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: #48555b;
+    margin-top: 25px;
+    padding-left: 23px;
+}
+.advantage-item-desc{
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    line-height: 177%;
+    letter-spacing: 0.01em;
+    color: #48555b;
+    align-items: center;
+    text-align: left;
+    margin-top: 13px;
+    margin-left: 23px;
 }
