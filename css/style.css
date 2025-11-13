@@ -1,5 +1,6 @@
 body {
-    overflow: scroll;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 .header{
@@ -7,7 +8,6 @@ body {
     flex-direction: column;
     text-align: center;
     max-width: 1440px;
-    width: 100%;
     border: 1px solid #979797;
     margin: 0 auto;
 }
@@ -31,7 +31,7 @@ body {
     align-items: center;
     justify-content: space-between;
     max-width: 1440px;
-    width: 100%;
+    width: 100vw;
     height: 769px;
     margin-top: 41px;
     padding-bottom: 58px;
@@ -99,7 +99,7 @@ body {
     margin: 24px 250px;
     margin-left: 250px;
 }
-.header-row {
+.caption {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -178,7 +178,7 @@ hr {
     font-size: 20px;
     letter-spacing: 0.01em;
     color: #48555b;
-    margin-top: 92px;
+    margin-top: 80px;
     width: 405.08px;
     height: 81px;
     letter-spacing: 0.01em;
@@ -294,6 +294,7 @@ a {
     margin: 0 auto;
     gap: 27px;
     margin-top: 72px;
+    margin-bottom: 115px;
 
 }
 .advantage-item-container{
