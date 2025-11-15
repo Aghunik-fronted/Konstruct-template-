@@ -161,7 +161,9 @@ body {
     text-align: center;
     color: #48555b;
 }
-
+.second-header>a:hover {
+    color:  #00a4e5;
+}
 hr {
     border: 2px solid #00a4e5;
     width: 50px;
@@ -245,6 +247,9 @@ strong {
 }
 .advantage-title >a {
     color: #48555b;
+}
+.advantage-title>a:hover{
+    color: #00a4e5;
 }
 .line-border{
     margin-left: 0%;
