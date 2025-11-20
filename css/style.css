@@ -16,7 +16,6 @@ body {
     border: 1px solid #E6E6E6;
     margin: 0 auto;
 }
-
 .container{
     background-image: url(../images/bg.png);
     background-repeat: no-repeat;
@@ -51,29 +50,26 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    
 }
 .partner{
     font-family: "Bebas Neue", sans-serif;
     font-style: normal;
-    min-width: 576px;
-    height: 60px;
+    width: 576px;
+    width: 100%;
     padding-bottom: 1px;
     color: #fff;
     font-size: 60px;
     line-height: 100%;
     letter-spacing: 5.71px;
     font-weight: 400;
-    text-transform: uppercase;
-    width: 100%;
     text-align: center;
     margin: 5px auto;
 }
 .firm{
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    width: 386px;
-    height: 22px;
+    max-width: 386px;
+    width: 100%;
     color: #fff;
     font-size: 16px;
     font-weight: 600;
@@ -327,9 +323,6 @@ a {
     min-height: 330px;
     height: 100%;
     box-sizing: border-box;
-    /* padding-left: 23px;
-    padding-right: 22px;
-    padding-bottom: 32px; */
 
 }
 .advantage-item-logo{
@@ -363,14 +356,41 @@ a {
     margin-top: 13px;
     margin-left: 23px;
 }
-/* .section {
-    background: url();
-} */
+.section {
+    background: url(../images/bg1.png);
+    background-size: cover;
+    max-width: 1440px;
+    width: 100%;
+    min-height: 499px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
  .offer {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #48555b;
+    max-width: 350px;
     margin: 0 auto;
+    margin-top: 120px;
  }
- .section {
-    max-height: 499px;
+ .btn-row {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #0290c9;
+    background-color: #00A4E5;
+    margin: 0 auto;
+    margin-top: 35px;
+    padding: 11px 26px;
  }
  .holder {
     display: flex;
@@ -392,11 +412,6 @@ a {
     text-align: center;
     color: #fff;
  }
- /* .input-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
- } */
   form {
     height: 40px;
   }
@@ -426,4 +441,124 @@ a {
     box-sizing: border-box;
     margin: 0;
  }
- 
+ .footer {
+    background:  #141a20;
+ }
+ .wrapper-box {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 940px;
+    width: 100%;
+ }
+
+ .box-company {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 71px;
+    margin: 0 auto;
+ }
+ .container-item {
+    display: flex;
+    align-items:flex-start;
+    justify-content: flex-start;
+    margin-left: -40px;
+    gap: 34px;
+    
+}
+.container-item-link {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 42px;
+    box-sizing: border-box;
+}
+ .company {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-align: left;
+    color: #fff;
+    margin: 0;
+ }
+ .logo-item {
+    margin-top: 19px;
+ }
+
+ .copy {
+    font-family:"Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 173%;
+    letter-spacing: 0.08em;
+    color: #fff;
+    max-width: 250px;
+    margin-top: 15px;
+ }
+ .container-link {
+    display: flex;
+    align-items: flex-start;
+    box-sizing: content-box;
+    max-width: 76px;
+    text-align: left;
+ }
+ .links {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 227%;
+    letter-spacing: 0.08em;
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+ }
+ .link-item>a {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 227%;
+    letter-spacing: 0.08em;
+    color: #fff;
+    text-align: left;
+    white-space: nowrap;
+ }
+ .address>a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px;
+    line-height: 145%;
+    letter-spacing: 0.08em;
+    color: #fff;
+    margin: 0;
+ }
+.link-logo {
+    max-width: 12.04px;
+}
+.container-item-logo {
+    display: flex;
+    max-width: 87px ;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 71px;
+    margin-left: 0;
+}
+.lead {
+    background-color: #171819;
+    min-height: 60px;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: #fff;
+    margin-top: 22px;
+    margin-bottom: 23px;
+}
