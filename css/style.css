@@ -116,8 +116,13 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center; 
+    max-width: 1440px;
+    width: 100%;
     padding: 0;
-    gap: 12%;
+    gap: 10%;
+    margin-right: 7%;
+    
+
 }
 .container-row {
     display: flex;
@@ -129,7 +134,6 @@ body {
     width: 100%;
     min-height: 65px;
     max-height: 100vh;
-    margin-left: -1px;
     box-sizing: border-box;
     background-color: #fff;
 }
@@ -144,11 +148,11 @@ nav {
     list-style: none;
     display: flex;
     align-items: baseline;
-    gap: 39px;
+    gap: 20%;
     margin: 0;
     padding: 0;
     /* margin-top: 24px; */
-    /* margin-left: 200px; */
+    /* margin-left: -55%; */
 
 }
 .menu-link {
@@ -175,16 +179,19 @@ nav {
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: space-between;
     max-width: 941px;
     width: 100%;
     max-height: 344px;
+    height: 100%;
     margin: 0 auto;
-    margin-top: 4%;
+    margin-top: 3%;
 }
 .second-header {
     display: flex;
     flex: 1;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
@@ -334,7 +341,6 @@ a {
     text-decoration: none;
     align-items: center;
     padding: 2% 3%;
-    
     white-space: nowrap;
     margin-top: 0;
 }
@@ -352,7 +358,6 @@ a {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    margin: 0 auto;
     gap: 27px;
     margin-top: 72px;
     margin-bottom: 115px;
@@ -634,6 +639,7 @@ a {
      .advantage-item {
         max-width: 940px;
         width: 100%;
+        display: flex;
      }
     }
     @media (max-width: 1280px) {
@@ -659,6 +665,13 @@ a {
     .story-row {
         max-width: 406px;
     }
+    .advantage-item-row {
+        display: flex;
+        flex: 1;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
 }
 @media (min-width: 480px) and (max-width: 800px){
     .story .story-row {
@@ -673,7 +686,7 @@ a {
         gap: 2%;
     }
     .main .second-header {
-        font-size: 12px;
+        font-size: 16px;
     }
 }
 @media (min-width: 480px) and (max-width: 800px) {
@@ -683,38 +696,141 @@ a {
      .story-row .construct {
         font-size: 16px;
      }
-}
-@media (min-width: 360px) and (max-width:480px) {
-    .story {
-        display: flex;
-        flex-direction: column;
-    }
-    .story-header {
+     .advantage-item-row {
         display: flex;
         flex: 1;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: flex-start;
+     }
+     .advantage-item-container {
+        max-width: 33.3%;
+        width: 100%;
+        display: flex;
+        max-height: 100%;
+        min-height: 370px;
+     }
+}
+@media screen and (min-width: 768px) and (max-width: 960px){
+    .caption {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .caption .menu {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .story {
+        margin: 1%;
+    }
+    .advantage-item {
+        margin: 10% 1% 4%;
+    }
+    .advantage-item-row {
+        display: flex;
+        flex: 1;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 1%;
+        margin: 0 1%;
+        }
+        .advantage-item-container {
+            min-height: 270px;
+            height: 100%;
+            box-sizing: border-box;
+            max-width: 33.3%;
+            /* width: 100%; */
+        }
+        .advantage-item-logo,
+        .advantage-item-title,
+        .advantage-item-desc {
+            margin: 2%;
+            padding: 1%;
+        }
+        .advantage-item-title {
+            font-size: 16px;
+        }
+        .advantage-item-desc {
+            font-size: 12px;
+            
+        }
+        .main .section {
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: initial;
+            min-height: 300px;
+            max-height: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 0;
+        }
+        .offer {
+            font-size: 18px;
+            max-width: 250px;
+            max-height: 50px;
+            height: 100%;
+            display: flex;
+            flex: 1;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 7%;
+            
+        }
+        .section .btn-row{
+            display: flex;
+            max-width: 90px;
+            align-items: center;
+            justify-content: center;
+            max-height: 30px;
+            font-size: 11px;
+            white-space: nowrap;
+            margin-top: 0;
+
+        }
+}
+        
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .main .story {
+        display: flex;
+        flex: 1;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
-        min-width: 406px;
+        max-height: 100vh;
+        min-height: 100%;
+        column-gap: 30%;
+        padding: 2%;
+    }
+    .story .second-header a {
+        max-height: 25px;
+        min-height: 100%;
+        font-size: 16px;
+
+    }
+    .main .story-header {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        min-width: 320px;
+        width: 100%;
+        min-height: 100%;
     }
     .story .story-row {
         display: flex;
         flex: 1;
         flex-direction: column;
-        min-width: 406px;
-        justify-content: center;
-        /* justify-content: center;
-        align-items: center; */
-        /* max-width: 406px;
+        min-width: 320px;
         width: 100%;
-        max-height: 214px;
-        height: 100%;
-        text-align: center; */
+        align-items: center;
+        justify-content: center;
     }
     .story-row .construct {
-        font-size: 12px;
-        max-width: 406px;
+        font-size: 18px;
+        min-width: 320px;
         width: 100%;
         text-align: center;
     }
@@ -722,19 +838,126 @@ a {
         text-align: justify;
     }
     .story .plans {
+        min-width: 320px;
+        width: 100%;
         display: flex;
         flex: 1;
         justify-content: center;
         align-items: center;
         flex-wrap: nowrap;
-        gap: 1%;
+        gap: 1.5%;
     }
-    .advantage-item {
-        max-width: 406px;
+    .advantage .advantage-item {
+        min-width: 320px;
         width: 100%;
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
-        white-space: inherit;
+        flex: 1;
+        justify-content: space-evenly;
+        align-items: center; 
+        margin: 10% auto 5%;
     }
+    .advantage-item .advantage-title {
+        font-size: 16px;
+        letter-spacing: 0.5;
+    }
+    .text-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        margin-bottom: 5%;
+    }
+    .line-border {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 10%;
+    }
+    .btn-item {
+        max-width: 80px;
+        min-height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 11px;
+    }
+    .advantage-item-row {
+        display: flex;
+        flex: 1;
+        flex-wrap: nowrap;
+        margin: 0;
+        justify-content: baseline;
+        gap: 0.5%;
+        padding: 0;
+        margin: 0 auto;
+
+    }
+    .advantage-item-container {
+        max-width: 33.3%;
+        width: 100%;
+        min-height: 250px;
+        height: 100%;
+        margin: 2%;
+        padding: 2%;
+        box-sizing: border-box;
+        align-items: flex-start;
+    }
+    .advantage-item-logo {
+        margin: 2%;
+    }
+    .advantage-item-title {
+        font-size: 14px;
+        margin: 2%;
+        padding-left: 0;
+    }
+    .advantage-item-desc {
+        font-size: 11px;
+        text-align: left;
+        padding: 0;
+        margin: 7% 0;
+    }
+    .main .section {
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: initial;
+            min-width: 320px;
+            width: 100%;
+            min-height: 165px;
+            max-height: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 0;
+        }
+        .offer {
+            font-size: 14px;
+            max-width: 250px;
+            max-height: 50px;
+            height: 100%;
+            display: flex;
+            flex: 1;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 5%;
+            
+        }
+        .section .btn-row{
+            display: flex;
+            max-width: 60px;
+            padding: 1%;
+            align-items: center;
+            justify-content: center;
+            max-height: 20px;
+            font-size: 8px;
+            white-space: nowrap;
+            margin-top: 0;
+            padding: 1%;
+        }
+        .main .holder {
+            min-width: 320px;
+            width: 100%;
+        }
 }
