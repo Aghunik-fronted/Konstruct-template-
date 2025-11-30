@@ -621,22 +621,36 @@ a {
     margin-top: 22px;
     margin-bottom: 23px;
 }
-@media (max-width: 1600px) {
+@media (min-width: 960px) and (max-width: 1600px) {
     .header .container {
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: 50% 50%;
         max-width: 1440px;
         width: 100%;
         min-height: 100%;
-        max-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        gap: 25%;
     
      }
      .container .wrapper {
-       max-width: 100%;
-       max-height: 670px;
+       max-width: 1440px;
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+       align-items: center;
+       gap: 25%;
+       margin-top: 4%;
+       margin-bottom: 6%;
      }
      .box .partner {
-        font-size: 48px;
+        margin-top: 5%;
+        font-size: 60px;
      }
      .header .container-row {
         max-width: 100%;
@@ -652,6 +666,13 @@ a {
         max-width: 940px;
         width: 100%;
         display: flex;
+     }
+     .main .section{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        max-width: 1440px;
+        width: 100%;
      }
     }
     @media (max-width: 1280px) {
@@ -691,74 +712,40 @@ a {
         flex-wrap: wrap;
     }
 }
-/* @media (min-width: 480px) and (max-width: 800px){
-    .story .story-row {
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-        max-width: 406px;
-        width: 100%;
-    }
-    .story .plans {
-        display: flex;
-        gap: 2%;
-    }
-    .main .second-header {
-        font-size: 16px;
-    }
-}
-@media (min-width: 480px) and (max-width: 800px) {
-    .box .partner {
-        font-size: 24px;
-     }
-     .story-row .construct {
-        font-size: 16px;
-     }
-     .advantage-item-row {
-        display: flex;
-        flex: 1;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        align-items: flex-start;
-     }
-     .advantage-item-container {
-        max-width: 33.3%;
-        width: 100%;
-        display: flex;
-        max-height: 100%;
-        min-height: 370px;
-     }
-} */
 @media screen and (min-width: 768px) and (max-width: 960px){
     .header .container {
-        background-size: 100%;
+        background-size: cover;
         background-repeat: no-repeat;
+        background-position: 50% 50%;
         min-width: 768px;
-        width: 100%;
+        max-width: 960px;
         max-height: 483px;
-        height: 100%;
+        min-height: 100%;
         display: flex;
         flex: 1;
-        justify-content: space-between;
+        column-gap: 25%;
+        justify-content: center;
         align-items: center;
 }
     .container .wrapper {
-        margin-top: 1%;
-        max-width: 500px;
-        max-height: 500px;
-        height: 100%;
+        /* min-width: 400px;
+        width: 100%; */
+        min-height: 480px;
+        /* max-height: 100%; */
         display: flex;
         flex-direction: column;
         flex: 1;
-        gap: 5%;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
     }
     .wrapper .logo-row img {
-        max-width: 102px;
-        width: 100%;
-        margin-top: 10%;
-        margin-bottom: 65%;
+        max-width: 85px;
+        /* width: 100%; */
+        margin-top: 3%;
+        margin-bottom: 75%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .box {
         min-width: 100%;
@@ -770,12 +757,12 @@ a {
         align-items: center;
         margin: 0;
     }
-    .partner {
-        font-size: 18px;
+    .box .partner {
+        font-size: 32px;
         margin: 0;
     }
     .firm {
-        font-size: 16px;
+        font-size: 13px;
         margin: 0;
     }
     .caption {
@@ -791,7 +778,15 @@ a {
         flex-wrap: nowrap;
     }
     .story {
-        margin: 1%;
+        margin: 1% 2%;
+    }
+    .story-header {
+        gap: 2%;
+    }
+    .story-row {
+        display: flex;
+        flex-direction: column;
+        gap: 1%;
     }
     .advantage-item {
         margin: 10% 1% 4%;
@@ -826,19 +821,22 @@ a {
             
         }
         .main .section {
-            background-size: 100%;
+            background-size: cover;
             background-repeat: no-repeat;
-            background-position: initial;
-            min-height: 260px;
+            background-position: 50% 50%;
+            min-width: 768px;
+            max-width: 100%;
+            min-height: 350px;
             max-height: 550;
             /* height: 100%; */
             display: flex;
-            justify-content: flex-start;
+            flex-direction: column;
+            justify-content: baseline;
             align-items: flex-start;
-            gap: 0;
+            gap: 10%;
         }
         .offer {
-            font-size: 18px;
+            font-size: 20px;
             max-width: 250px;
             max-height: 50px;
             height: 100%;
@@ -846,8 +844,8 @@ a {
             flex: 1;
             justify-content: flex-start;
             align-items: flex-start;
-            margin-top: 7%;
-            margin-bottom: 0;
+            margin-top: 10%;
+            margin-bottom: 2%;
             padding: 0;
             
         }
@@ -869,35 +867,35 @@ a {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
      .header .container {
-        background-size: 100%;
+        background-size: cover;
         background-repeat: no-repeat;
+        background-position: 50% 50%;
         min-width: 320px;
         max-width: 767px;
-        width: 100%;
-        min-height: 250px;
-        min-height: 100%;
+        min-height: 351px;
+        /* max-height: 100%; */
         display: flex;
         flex: 1;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
 }
     .container .wrapper {
-        margin-top: 1%;
+        margin-top: -3%;
         min-width: 320px;
         max-height: 483px;
-        min-height: 300px;
-        height: 100%;
+        min-height: 350px;
+        /* height: 100%; */
         display: flex;
         flex-direction: column;
         flex: 1;
         gap: 5%;
-        justify-content: flex-start;
+        justify-content: space-around;
         align-items: center;
     }
     .wrapper .logo-row img {
         max-width: 60px;
         width: 100%;
-        margin-top: 15%;
+        margin-top: 13%;
     }
     .box {
         min-width: 50%;
@@ -943,15 +941,19 @@ a {
         min-width: 320px;
         max-width: 100%;
         max-height: 100vh;
-        min-height: 100vw;
-        column-gap: 30%;
-        padding: 2%;
+        /* min-height: 100vw; */
+        column-gap: 5%;
+        padding: 1%;
+        box-sizing: border-box;
+    }
+    .story .second-header {
+        max-height: 25px;
+        margin-bottom: 0;
     }
     .story .second-header a {
-        max-height: 25px;
-        min-height: 100%;
+        /* max-height: 25px; */
+        /* min-height: 100%; */
         font-size: 16px;
-
     }
     .main .story-header {
         display: flex;
@@ -962,6 +964,8 @@ a {
         min-width: 320px;
         width: 100%;
         min-height: 100%;
+        padding: 0;
+        margin-top: 0;
     }
     .story .story-row {
         display: flex;
@@ -1075,15 +1079,16 @@ a {
         opacity: 1;
     }
     .main .section {
-        background-size: 100%;
+        background-size: cover;
         background-repeat: no-repeat;
-        background-position: initial;
-        min-width: 320px;
-        width: 100%;
-        min-height: 115px;
-        max-height: 100%;
+        background-position: 50% 50%;
+        /* min-width: 320px; */
+        max-width: 767px;
+        min-width: 100%;
+        min-height: 200px;
+        max-height: 100vh;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: flex-start;
         gap: 0;
 
@@ -1097,7 +1102,7 @@ a {
         flex: 1;
         justify-content: flex-start;
         align-items: flex-start;
-        margin-top: -3%;
+        margin-top: -15%;
             
         }
     .section .btn-1{
@@ -1112,7 +1117,7 @@ a {
         font-size: 8px;
         white-space: nowrap;
         margin-top: -1%;
-        padding: 1%;
+        padding: 2%;
         }
     .main .holder {
         min-width: 320px;
@@ -1121,27 +1126,30 @@ a {
         display: flex;
         flex: 1;
         align-items: center;
-        justify-content: space-around;
-         gap: 2%;
+        justify-content: center;
+        gap: 0;
         }
-    .news {
-        min-width: 30%;
+    .holder .news {
+        max-width: 20%;
         margin: 1%;
-        font-size: 12px;
+        font-size: 11px;
         }
     .form {
         margin: 0;
         padding: 0;
-        max-width: 25%;
+        min-width: 15%;
+        max-width: 100%;
         max-height: 35px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .get-email {
-        max-width: 30%;
-        margin-right: 0;
+    .holder .get-email {
+        min-width: 15%;
+        max-width: 100%;
+        margin-right: 0.1%;
         margin-top: 2%;
+        margin-left: 10%;
         max-height: 9px;
         font-size: 11px;
         letter-spacing: 0;
@@ -1153,8 +1161,9 @@ a {
         }
     .sign-up {
         max-width: 10%;
-        margin-left: -2%;
-        max-height: 25px;
+        margin-left: 0;
+        margin-right: 7%;
+        max-height: 26px;
         font-size: 11px;
         display: flex;
         align-items: center;
