@@ -435,18 +435,18 @@ a {
     color: #fff;
     outline: 1px solid #0290c9;
     background-color: #00A4E5;
+    border: none;
     margin: 0 auto;
     margin-top: 35px;
     padding: 11px 26px;
     box-sizing: border-box;
     cursor: pointer;
  }
- /* button,
- button:active,
- button:focus {
-    border: #0290c9;
-
- } */
+ .btn-1:active {
+    outline: 1px solid #0290c9;
+    border: 1px solid #0290c9;
+    background-color: #E6E6E6;
+ }
  .holder {
     display: flex;
     justify-content: center;
@@ -481,22 +481,29 @@ a {
     background-color: #fff;
     border: 1px solid #979797;
     border-right: 1px solid #00a4e5;
+    padding: 10px auto;
  }
  .sign-up {
     max-width: 150px;
-    outline-color: #0290c9;
+    outline: 1px solid #0290c9;
     background-color: #00a4e5;
+    border: none;
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 13px;
     letter-spacing: 0.04em;
     text-align: center;
     color: #fff;
-    padding: 10px 49.5px 10px 48.5px;
-    height: 40px;
+    padding: 0px 49.5px 0px 48.5px;
+    min-height: 38px;
     box-sizing: border-box;
     margin: 0;
     cursor: pointer;
+ }
+ .sign-up:active {
+    outline: 1px solid #0290c9;
+    border: 1px solid #0290c9;
+    background-color: #E6E6E6;
  }
  .footer {
     background:  #141a20;
@@ -1106,22 +1113,22 @@ a {
         }
     .section .btn-1{
         display: flex;
-        min-width: 50px;
-        max-width: 80px;
-        padding: 1%;
+        min-width: 80px;
+        max-width: 100px;
         align-items: center;
         justify-content: center;
         max-height: 20px;
         min-height: 15px;
-        font-size: 8px;
+        font-size: 11px;
         white-space: nowrap;
         margin-top: -1%;
-        padding: 2%;
+        padding: 4%;
         }
     .main .holder {
         min-width: 320px;
         max-width: 767px;
         width: 100%;
+        min-height: 20%;
         display: flex;
         flex: 1;
         align-items: center;
@@ -1149,7 +1156,7 @@ a {
         margin-right: 0.1%;
         margin-top: 2%;
         margin-left: 10%;
-        max-height: 9px;
+        max-height: 30px;
         font-size: 11px;
         letter-spacing: 0;
         text-align: left;
@@ -1158,16 +1165,20 @@ a {
         justify-content: center;
     
         }
-    .sign-up {
+    .holder .sign-up {
         max-width: 10%;
         margin-left: 0;
         margin-right: 7%;
-        max-height: 26px;
+        max-height: 30px;
+        min-height: 28px;
         font-size: 11px;
         display: flex;
+        flex: 1;
         align-items: center;
         justify-content: center;
-        margin-top: 1%;
+        margin-top: 0.8%;
+        padding-top: 0;
+        box-sizing: border-box;
         }
 
 }
